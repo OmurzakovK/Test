@@ -87,6 +87,7 @@ public class Phone  implements PhoneInterface{
 
     @Override
     public void searchContact(Contact[] contacts) {
+        System.out.println("Contaktyn atyn berigiz ");
         String con =scanner.nextLine();
         for (Contact d:contacts) {
             if (con.equals(d.getFullName())){
@@ -98,6 +99,7 @@ public class Phone  implements PhoneInterface{
     @Override
     public void updateName(String fullName) {
         System.out.println("Jady Name berigiz");
+        fullName =scanner.nextLine();
         System.out.println(fullName);
 
 }}
